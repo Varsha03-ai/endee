@@ -4,7 +4,7 @@ from utils import extract_text_from_pdf, extract_skills
 resume_path = "resume.pdf"
 resume_text = extract_text_from_pdf(resume_path)
 
-# Job Description (you can change this later)
+# Job Description
 job_description = """
 Looking for a Python developer with experience in machine learning,
 data science, and SQL. Knowledge of deep learning is a plus.
@@ -29,5 +29,7 @@ print("\n===== RESULT =====")
 print("Resume Skills:", resume_skills)
 print("Job Skills:", jd_skills)
 print("Matching Skills:", matching_skills)
+print("Missing Skills:", missing_skills)
+print(f"Match Score: {match_score:.2f}%")
 print("Missing Skills:", missing_skills)
 print(f"Match Score: {match_score:.2f}%")
