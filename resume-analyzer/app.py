@@ -1,6 +1,6 @@
 from utils import extract_text_from_pdf, extract_skills
 
-resume_path = "resume.pdf"
+resume_path = "V@Resume.pdf"
 resume_text = extract_text_from_pdf(resume_path)
 
 job_description = """
