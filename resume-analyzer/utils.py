@@ -9,7 +9,6 @@ def extract_text_from_pdf(file_path):
         text += page.extract_text()
     
     return text
-
 def extract_skills(text):
     # Simple predefined skill list (you can expand later)
     skills_list = [
