@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Job Matcher</title>
+</head>
+<body>
+
+<h2>Resume Job Fit Predictor</h2>
+
+<form method="POST">
+    <label>Resume:</label><br>
+    <textarea name="resume" rows="5" cols="50"></textarea><br><br>
+
+    <label>Job Description:</label><br>
+    <textarea name="job" rows="5" cols="50"></textarea><br><br>
+
+    <button type="submit">Check Match</button>
+</form>
+
+{% if result %}
+<h3>{{ result }}</h3>
+{% endif %}
+
+</body>
+</html>
